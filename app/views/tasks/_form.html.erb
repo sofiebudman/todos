@@ -12,26 +12,22 @@
   <% end %>
 
   <div>
-    <%= form.label :name, style: "display: block" %>
-    <%= form.text_field :name %>
+    <%= form.text_field :name, class: "form=control", placeholder: "name" %>
   </div>
-
+  <br>
   <div>
-    <%= form.label :subject, style: "display: block" %>
-    <%= form.text_field :subject %>
+    <%= form.text_field :subject, class: "form=control", placeholder: "subject" %>
   </div>
-
+  <br>
   <div>
-    <%= form.label :due, style: "display: block" %>
-    <%= form.text_field :due %>
+    <%= form.text_field :due, class: "form=control", placeholder: "due" %>
   </div>
-
+  <br>
   <div>
-    <%= form.label :notes, style: "display: block" %>
-    <%= form.text_field :notes %>
+    <%= form.text_field :notes, class: "form=control", placeholder: "notes" %>
   </div>
-
+  <br>
   <div>
-    <%= form.submit %>
+    <%= form.submit class: 'btn btn-secondary'%>
   </div>
 <% end %>
